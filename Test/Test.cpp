@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     cout << "input block_data ";
     cin >> param_str;
     stringstream dataStream(param_str);
-    if(/*(idStream >> block_id) && */(dataStream>>block_data))
+    if(ataStream>>block_data)
       stat = put_block(block_id, block_data);
     gethash(block_data);
     delete[] block_data;
